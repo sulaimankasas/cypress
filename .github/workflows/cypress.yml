@@ -1,8 +1,9 @@
-name: Test build command for pull request
 on:
   pull_request:
     branches:
-      - master
+      - development
+      - release
+name: Test build command for pull request
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
